@@ -1,0 +1,12 @@
+{
+  "name": "@syan/electron-preload",
+  "version": "0.1.0",
+  "author": "zhengxs2018",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./lib/mod.ts",
+  "dependencies": {
+    "@syan/webview-protocol": "workspace:^",
+    "electron": "^29.3.0"
+  }
+}

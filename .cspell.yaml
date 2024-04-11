@@ -1,0 +1,30 @@
+version: "0.2"
+ignorePaths:
+  - archive
+  - node_modules
+dictionaries:
+  - en_US
+  - softwareTerms
+  - bash
+  - node
+  - npm
+  - html
+  - css
+  - typescript
+  - filetypes
+words:
+  - clsx
+  - cosmokit
+  - crxjs
+  - lucide
+  - preinstall
+  - schemastery
+  - shadcn
+  - syan
+  - tailwindcss
+  - tsbuildinfo
+  - ttou
+  - typecheck
+  - webextension
+ignoreWords:
+  - zhengxs

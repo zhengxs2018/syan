@@ -1,0 +1,20 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // fix npx shadcn-ui@latest add button
+      "@renderer/*": [
+        "src/renderer/src/*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.web.json"
+    }
+  ]
+}

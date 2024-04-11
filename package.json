@@ -1,0 +1,26 @@
+{
+  "name": "syan",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "pnpm --filter \"@syan/*\" --if-present build ",
+    "watch": "pnpm -r --parallel --if-present watch",
+    "dev:desktop": "pnpm -F syan-desktop  dev",
+    "build:desktop": "pnpm -F syan-desktop build",
+    "build:extension": "pnpm -F syan-extension build"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "devDependencies": {
+    "@ttou/define-config": "^3.2.0",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.69",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.6",
+    "vite-plugin-checker": "^0.6.4",
+    "vite-plugin-dts": "^3.7.3",
+    "vite-plugin-externalize-deps": "^0.8.0"
+  }
+}
