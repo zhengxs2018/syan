@@ -9,11 +9,9 @@ schemaSet.add('nativeUI.confirm')
 
 export const nativeUI: NativeUI = {
   alert(message, styles) {
-    // TODO check message
     return ipcRenderer.invoke(IpcAbilityChannel, 'nativeUI.alert', message, styles)
   },
   confirm(message, styles) {
-    // TODO check message
-    return ipcRenderer.invoke(IpcAbilityChannel, 'nativeUI.alert', message, styles)
+    return ipcRenderer.invoke(IpcAbilityChannel, 'nativeUI.confirm', message, styles)
   }
 }

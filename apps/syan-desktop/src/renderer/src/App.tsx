@@ -10,7 +10,7 @@ function App(): JSX.Element {
   const showConfirm = () => {
     syan.nativeUI
       .confirm('test', {
-        buttons: ['确定', '222']
+        title: '测试'
       })
       .then((res) => {
         console.log(res)

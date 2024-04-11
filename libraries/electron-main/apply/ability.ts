@@ -15,19 +15,7 @@ export function applyAbility(abilities: AbilityConstructor[] = defaultAbilities)
     IpcAbilityChannel,
     async (event: Electron.IpcMainInvokeEvent, schema: string, ...args: unknown[]) => {
       const win = BrowserWindow.fromId(event.sender.id)
-
-      if (!win) {
-        console.error('[electron-main] abilities: window not found')
-        return
-      }
-
-      try {
-        await registry.invoke(win, schema, ...args)
-      } catch (err) {
-        console.error('[electron-main] abilities: invoke error', err)
-      }
-
-      return registry.invoke(win, schema, ...args)
+      return registry.invoke(win!, schema, ...args)
     }
   )
 }
