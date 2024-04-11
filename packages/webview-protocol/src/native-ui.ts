@@ -13,8 +13,6 @@ export namespace NativeUI {
 }
 
 export interface NativeUI {
-  alert(message: string, title?: string): void
-
-  confirm(message: string, title?: string, buttons?: string[]): boolean
-  confirm(message: string, style?: NativeUI.ConfirmStyles): boolean
+  alert(message: string, title?: string): Promise<void>
+  confirm(message: string, style?: NativeUI.ConfirmStyles): Promise<boolean>
 }

@@ -7,6 +7,27 @@ function App(): JSX.Element {
     syan.nativeUI.alert('test')
   }
 
+  const showConfirm = () => {
+    syan.nativeUI
+      .confirm('test', {
+        buttons: ['确定', '222']
+      })
+      .then((res) => {
+        console.log(res)
+      })
+  }
+
+  const showConfirmWithCustomStyles = () => {
+    syan.nativeUI
+      .confirm('test', {
+        title: '自定义',
+        buttons: ['确定', '222']
+      })
+      .then((res) => {
+        console.log(res)
+      })
+  }
+
   return (
     <>
       <img alt="logo" className="logo" src={electronLogo} />
@@ -26,7 +47,13 @@ function App(): JSX.Element {
         </div>
         <div className="action">
           <a target="_blank" rel="noreferrer" onClick={showAlert}>
-            Show Native Alerts UI.
+            Show Native Alerts Dialog.
+          </a>
+          <a target="_blank" rel="noreferrer" onClick={showConfirm}>
+            Show Native Confirm Dialog.
+          </a>
+          <a target="_blank" rel="noreferrer" onClick={showConfirmWithCustomStyles}>
+            Show Native Confirm Dialog With Custom Styles.
           </a>
         </div>
       </div>
