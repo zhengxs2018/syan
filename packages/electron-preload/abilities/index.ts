@@ -1,4 +1,4 @@
-import { type JSBridge } from '@syan/webview-protocol'
+import { type JSBridge } from '@syan/core-protocol'
 
 import { nativeUI } from './native-ui'
 import { canIUse } from './schema'

@@ -15,7 +15,7 @@
     "watch": "vite build --watch --mode=development",
     "build": "vite build"
   },
-  "dependencies": {
-    "@syan/webview-protocol": "workspace:^"
+  "devDependencies": {
+    "@syan/core-protocol": "workspace:^"
   }
 }

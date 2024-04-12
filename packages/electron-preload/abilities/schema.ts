@@ -1,4 +1,4 @@
-import type { APISchema } from '@syan/webview-protocol'
+import type { APISchema } from '@syan/core-protocol'
 
 export const schemaSet = new Set<APISchema>()
 

@@ -1,5 +1,5 @@
 import { ipcRenderer } from 'electron'
-import { type NativeUI } from '@syan/webview-protocol'
+import { type NativeUI } from '@syan/core-protocol'
 import { IpcAbilityChannel } from '@syan/electron-protocol'
 
 import { schemaSet } from './schema'

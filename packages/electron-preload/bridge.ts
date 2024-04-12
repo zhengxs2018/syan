@@ -1,6 +1,6 @@
 import { contextBridge } from 'electron'
 
-import { type JSBridge, WebViewJSBridgeInjectionKey } from '@syan/webview-protocol'
+import { type JSBridge, WebViewJSBridgeInjectionKey } from '@syan/core-protocol'
 
 import { nativeUI } from './abilities/native-ui'
 import { canIUse } from './abilities/schema'

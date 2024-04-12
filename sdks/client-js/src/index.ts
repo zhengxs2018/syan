@@ -1,4 +1,4 @@
-import { WebViewJSBridgeInjectionKey, type JSBridge } from '@syan/webview-protocol'
+import { WebViewJSBridgeInjectionKey, type JSBridge } from '@syan/core-protocol'
 import noop from './noop'
 
 // @ts-expect-error fix this type

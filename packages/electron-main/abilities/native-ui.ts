@@ -1,7 +1,7 @@
 import { BrowserWindow, dialog } from 'electron'
 
 import { Ability } from '@syan/electron-protocol'
-import type { NativeUI } from '@syan/webview-protocol'
+import type { NativeUI } from '@syan/core-protocol'
 
 export class NativeUIAbility implements Ability, NativeUI {
   static abilityName = 'nativeUI'

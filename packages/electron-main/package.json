@@ -7,7 +7,7 @@
   "main": "./mod.ts",
   "dependencies": {
     "@syan/electron-protocol": "workspace:^",
-    "@syan/webview-protocol": "workspace:^",
+    "@syan/core-protocol": "workspace:^",
     "electron": "^29.3.0"
   }
 }

@@ -31,7 +31,7 @@
     "@syan/electron-main": "workspace:^",
     "@syan/electron-preload": "workspace:^",
     "@syan/electron-protocol": "workspace:^",
-    "@syan/webview-protocol": "workspace:^",
+    "@syan/core-protocol": "workspace:^",
     "autoprefixer": "^10.4.19",
     "electron": "^29.3.0",
     "electron-builder": "^24.13.3",
