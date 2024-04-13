@@ -7,21 +7,22 @@ TODO
 ```
 Project Files/
 ├── apps/
-│   ├── landing-page/                # Web App
-│   ├── syan-desktop/                # Electron App
-│   ├── syan-mobile/                 # React Native App
-│   ├── llm-server/                  # Standalone LLM Server，support nodejs/deno/serverless...
-│   └── syan-extension/              # Chrome Extension
+│   ├── desktop/                     # Electron App
+│   ├── mobile/                      # React Native App
+│   ├── chrome-extension/            # Chrome Extension
+│   ├── vscode-extension/            # VSCode Extension
+│   ├── landing-page/
+│   └── llm-server/
 ├── common/
 │   └── profiles/
 │       ├── tsconfig.*.json
 │       └── typedoc.json
-├── packages/                      # Common packages
-│   ├── core-protocol/
-│   ├── electron-main/
-│   ├── electron-preload/
-│   └── electron-protocol/
-├── sdk/                       # NPM packages
+├── packages/
+│   ├── core/
+│   │   ├── constants/
+│   │   └── protocol/
+│   └── electron/
+├── sdk/
 │   └── client-js/
 ├── package.json
 └── README.md
@@ -40,8 +41,11 @@ $ pnpm install
 # 监听并构建依赖包
 $ pnpm watch
 
-# 启动 electron app
+# 启动 Electron 桌面开发
 $ pnpm dev:desktop
+
+# 启动 Chrome 拓展开发
+$ pnpm dev:crx
 ```
 
 ## License

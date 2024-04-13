@@ -1,7 +1,7 @@
-import { WebViewJSBridgeInjectionKey, type JSBridge } from '@syan/core-protocol'
-import noop from './noop'
+import bridge from './bridge'
+import { nativeUI } from './abilities/native-ui'
 
-// @ts-expect-error fix this type
-const bridge = (window[WebViewJSBridgeInjectionKey] || noop) as JSBridge
-
-export default bridge
+export default {
+  isSupported: bridge.platform !== 'unknown',
+  nativeUI
+}

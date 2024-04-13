@@ -15,7 +15,11 @@
     "watch": "vite build --watch --mode=development",
     "build": "vite build"
   },
+  "dependencies": {
+    "@syan/protocol": "workspace:^"
+  },
   "devDependencies": {
-    "@syan/core-protocol": "workspace:^"
+    "@syan/constants": "workspace:^",
+    "@syan/shared": "workspace:^"
   }
 }

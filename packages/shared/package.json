@@ -1,0 +1,8 @@
+{
+  "name": "@syan/shared",
+  "version": "0.1.0",
+  "author": "zhengxs2018",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./mod.ts"
+}

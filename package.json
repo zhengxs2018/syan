@@ -4,9 +4,10 @@
   "scripts": {
     "postinstall": "pnpm --filter \"@syan/*\" --if-present build ",
     "watch": "pnpm -r --parallel --if-present watch",
-    "dev:desktop": "pnpm -F syan-desktop  dev",
-    "build:desktop": "pnpm -F syan-desktop build",
-    "build:extension": "pnpm -F syan-extension build"
+    "dev:desktop": "pnpm -F desktop  dev",
+    "build:desktop": "pnpm -F desktop build",
+    "dev:crx": "pnpm -F chrome-extension dev",
+    "build:crx": "pnpm -F chrome-extension build"
   },
   "packageManager": "pnpm@8.15.6",
   "devDependencies": {
